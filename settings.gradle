@@ -1,0 +1,6 @@
+rootProject.name = 'NextInvFX'
+
+include 'invfx-bom'
+include 'invfx-core'
+include 'invfx-binding-bukkit'
+include 'invfx-examples'

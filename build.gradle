@@ -1,0 +1,15 @@
+plugins {
+    id("java-platform")
+    id("maven-publish")
+}
+
+subprojects {
+    group = "gg.nextforge"
+    version = "0.1.0"
+    repositories {
+        mavenCentral()
+        maven {
+            url = "https://repo.papermc.io/repository/maven-public/"
+        }
+    }
+}
