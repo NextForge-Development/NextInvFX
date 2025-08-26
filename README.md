@@ -4,8 +4,8 @@
 ![Shade Ready](https://img.shields.io/badge/shade-ready-blueviolet?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-bukkit%20%7C%20paper-green?style=for-the-badge)
 ![Java](https://img.shields.io/badge/java-21+-orange?style=for-the-badge)
-[![License](https://forthebadge.com/images/badges/license-mit.svg)](https://opensource.org/license/mit)
-![forthebadge](https://forthebadge.com/images/badges/warning,-this-contains_-plutonium.svg)
+[![License](https://img.shields.io/badge/license-mit-blue?style=for-the-badge)](https://opensource.org/license/mit)
+![forthebadge](https://img.shields.io/badge/warning_this_contains-plutonium-orange?style=for-the-badge)
 
 > [!CAUTION]
 > InvFX is currently an **unstable prototype**.  
