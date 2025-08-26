@@ -7,7 +7,6 @@
 ![License](https://img.shields.io/badge/license-TBD-lightgrey?style=for-the-badge)
 
 > [!CAUTION]
-> ⚠ **Disclaimer**  
 > InvFX is currently an **unstable prototype**.  
 > There is no public repository or official release yet.  
 > APIs, packages, and internals may change at any time without notice.  
