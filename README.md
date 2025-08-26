@@ -4,7 +4,7 @@
 ![Shade Ready](https://img.shields.io/badge/shade-ready-blueviolet?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-bukkit%20%7C%20paper-green?style=for-the-badge)
 ![Java](https://img.shields.io/badge/java-21+-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/license-TBD-lightgrey?style=for-the-badge)
+[![License](https://forthebadge.com/images/badges/license-mit.svg)](https://opensource.org/license/mit)
 ![forthebadge](https://forthebadge.com/images/badges/warning,-this-contains_-plutonium.svg)
 
 > [!CAUTION]
