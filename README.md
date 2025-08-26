@@ -5,6 +5,7 @@
 ![Platform](https://img.shields.io/badge/platform-bukkit%20%7C%20paper-green?style=for-the-badge)
 ![Java](https://img.shields.io/badge/java-21+-orange?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-TBD-lightgrey?style=for-the-badge)
+[![BuildBy](https://img.shields.io/badge/built-by-nextforge-purple?style=for-the-badge)
 
 > [!CAUTION]
 > InvFX is currently an **unstable prototype**.  
