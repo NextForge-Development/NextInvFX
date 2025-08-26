@@ -2,7 +2,7 @@
 
 ![Status](https://img.shields.io/badge/status-prototype-red?style=for-the-badge)
 ![Shade Ready](https://img.shields.io/badge/shade-ready-blueviolet?style=for-the-badge)
-![Platform](https://img.shields.io/badge/platform-bukkit%20%7C%20paper-green?style=for-the-badge)
+![Platform](https://img.shields.io/badge/platform-paper-green?style=for-the-badge)
 ![Java](https://img.shields.io/badge/java-21+-orange?style=for-the-badge)
 [![License](https://img.shields.io/badge/license-mit-blue?style=for-the-badge)](https://opensource.org/license/mit)
 ![Plutonium Warning](https://img.shields.io/badge/warning,_this_contains-plutonium-orange?style=for-the-badge)
