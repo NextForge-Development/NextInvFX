@@ -19,19 +19,17 @@ public final class BukkitItemFactory implements ItemFactory {
             return b.asBukkit();
         }
 
-        // Rich fallback (nice for tests / simple use)
         if (descriptor instanceof RichItemDescriptor rich) {
             Material mat = Material.matchMaterial(rich.getMaterial());
             if (mat == null) mat = Material.BARRIER;
             ItemStack is = new ItemStack(mat);
             ItemMeta meta = is.getItemMeta();
             if (meta != null) {
-                if (rich.getDisplayName() != null) meta.setDisplayName(rich.getDisplayName());
-                if (rich.getLore() != null && !rich.getLore().isEmpty()) meta.setLore(rich.getLore());
-                if (rich.isGlowing()) {
-                    meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
-                    meta.setEnchantmentGlintOverride(true);
-                }
+                if (rich.getDisplayName() != null)
+                    meta.displayName(rich.getDisplayName()); // Adventure API
+                if (rich.getLore() != null && !rich.getLore().isEmpty())
+                    meta.lore(rich.getLore()); // Adventure API list
+                if (rich.isGlowing()) meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
                 is.setItemMeta(meta);
             }
             return is;

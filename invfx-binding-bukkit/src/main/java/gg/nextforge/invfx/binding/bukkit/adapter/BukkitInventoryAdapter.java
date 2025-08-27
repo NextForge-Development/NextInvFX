@@ -1,6 +1,7 @@
 package gg.nextforge.invfx.binding.bukkit.adapter;
 
 import gg.nextforge.invfx.spi.InventoryAdapter;
+import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
 import org.bukkit.inventory.Inventory;
@@ -11,6 +12,11 @@ public final class BukkitInventoryAdapter implements InventoryAdapter {
     @Override
     public Object createInventory(int size, String title) {
         return Bukkit.createInventory(null, size, MiniMessage.miniMessage().deserialize(title));
+    }
+
+    @Override
+    public Object createInventory(int size, Component title) {
+        return Bukkit.createInventory(null, size, title);
     }
 
     @Override
