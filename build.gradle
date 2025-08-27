@@ -4,12 +4,22 @@ plugins {
 }
 
 subprojects {
-    group = "gg.nextforge"
-    version = "0.1.0-ALPHA"
+    group = providers.gradleProperty("group").get()
+    version = providers.gradleProperty("version").get()
     repositories {
         mavenCentral()
         maven {
             url = "https://repo.papermc.io/repository/maven-public/"
+        }
+    }
+
+    configurations.configureEach {
+        resolutionStrategy.activateDependencyLocking()
+    }
+
+    plugins.withId('java') {
+        dependencies {
+            implementation platform(project(':invfx-bom'))
         }
     }
 }

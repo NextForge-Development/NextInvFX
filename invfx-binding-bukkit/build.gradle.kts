@@ -1,7 +1,26 @@
 plugins { `java-library` }
+
+group = providers.gradleProperty("group").get()
+version = providers.gradleProperty("version").get()
+
+repositories {
+    mavenCentral()
+    maven("https://repo.papermc.io/repository/maven-public/")
+}
+
 dependencies {
     api(project(":invfx-core"))
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
-    compileOnly("org.projectlombok:lombok:1.18.34")
-    annotationProcessor("org.projectlombok:lombok:1.18.34")
+
+    // Paper/Adventure Versionen werden vom BOM vorgegeben
+    compileOnly("io.papermc.paper:paper-api")
+
+    api("net.kyori:adventure-api")
+    api("net.kyori:adventure-text-minimessage")
+
+    compileOnly("org.projectlombok:lombok")
+    annotationProcessor("org.projectlombok:lombok")
+
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
+tasks.test { useJUnitPlatform() }
+java { withSourcesJar(); withJavadocJar() }
