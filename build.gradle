@@ -5,7 +5,7 @@ plugins {
 
 subprojects {
     group = "gg.nextforge"
-    version = "0.1.0"
+    version = "0.1.0-ALPHA"
     repositories {
         mavenCentral()
         maven {
