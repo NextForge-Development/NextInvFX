@@ -94,12 +94,19 @@ public final class BukkitEventBridge implements Listener {
     @EventHandler
     public void onClose(InventoryCloseEvent e) {
         if (!(e.getPlayer() instanceof Player p)) return;
-        // Only remove if it was our window (best effort)
+        // Only remove if it was our window ( the best effort)
         Window w = windows.get(p.getUniqueId());
         if (w == null) return;
         int size = w.getView().rows() * w.getView().cols();
         if (e.getView().getTopInventory().getSize() == size) {
             windows.remove(p.getUniqueId());
         }
+    }
+
+    public void dispose() {
+        windows.clear();
+        InventoryCloseEvent.getHandlerList().unregister(this);
+        InventoryClickEvent.getHandlerList().unregister(this);
+        InventoryDragEvent.getHandlerList().unregister(this);
     }
 }
